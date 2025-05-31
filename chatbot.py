@@ -1,5 +1,5 @@
 import langchain
-from langchain import Chain
+from langchain import Chains
 
 # Crie uma instância do modelo Llama 3
 model = langchain.Model.load("llama:3")
