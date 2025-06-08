@@ -21,6 +21,7 @@ async function getResposta(chatBox, messageText) {
         newResponse.classList.add("message", "received");
         newResponse.innerHTML = `<p>${resposta}</p><span class="timestamp">${new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</span>`;
         chatBox.appendChild(newResponse);
+        chatBox.scrollTop = chatBox.scrollHeight;
 
     }).catch((error) => {
             console.error("Erro:", error);
