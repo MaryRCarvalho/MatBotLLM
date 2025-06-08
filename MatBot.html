@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatBot</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="chat-container">
         <div class="chat-box">
-            <div class="message received">
+            <div id="chat-box" class="message received">
                 <p>hello</p>
                 <span class="timestamp">12:35</span>
             </div>
@@ -19,11 +20,10 @@
             </div>
         </div>
         <div class="input-container">
-            <input type="text" id="messageInput" placeholder="Digite aqui">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem">
             <button onclick="sendMessage()">Enviar</button>
         </div>
     </div>
-    <script src="script.js"></script>
     
 </body>
 </html>
